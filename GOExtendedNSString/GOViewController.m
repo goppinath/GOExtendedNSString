@@ -8,6 +8,8 @@
 
 #import "GOViewController.h"
 
+#import "NSString+GOExtension.h"
+
 @interface GOViewController ()
 
 @end
@@ -18,6 +20,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    NSString *go = @"";
+    
+    [go trimLastCharacters:2];
 }
 
 - (void)didReceiveMemoryWarning
